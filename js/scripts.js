@@ -17,4 +17,11 @@ $(document).ready(function() {
   $('.carousel-control-next').click(() => {
     $('.carousel').carousel('next')
   })
+
+  $('#reservar').click(() => {
+    $('#exampleModalCenter').modal('toggle');
+  })
+  $('.close').click(() => {
+    $('#exampleModalCenter').modal('toggle');
+  })
 })

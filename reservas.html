@@ -84,7 +84,7 @@
                         <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium at dolorem quidem modi. Nam sequi consequatur obcaecati excepturi alias magni, accusamus eius blanditiis delectus ipsam minima ea iste laborum vero?</p>
                         <div class="d-flex">
                             <!-- <input class="form-control text-center me-3" id="inputQuantity" type="num" value="1" style="max-width: 3rem" /> -->
-                            <button class="btn btn-outline-dark flex-shrink-0" type="button">
+                            <button id="reservar" class="btn btn-outline-dark flex-shrink-0" type="button" data-toggle="modal" data-target="#exampleModalCenter">
                                 <i class="bi-cart-fill me-1"></i>
                                 Reservar
                             </button>
@@ -94,6 +94,28 @@
             </div>
         </section>
         <!-- Related items section-->
+
+        <!-- Button trigger modal -->
+        <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+          Launch demo modal
+        </button> -->
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScC2ljUnTiKADnV8_IYiIpzSzMBLdKZBFhdrn1T6VlTudVL0g/viewform?embedded=true" width="100%" height="705" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+              </div>
+            </div>
+          </div>
+        </div>
 
         <!-- Footer-->
         <footer class="py-5 bg-dark">
