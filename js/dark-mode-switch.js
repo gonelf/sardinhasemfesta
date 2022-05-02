@@ -32,9 +32,7 @@ function initTheme() {
     localStorage.getItem("darkSwitch") !== null &&
     localStorage.getItem("darkSwitch") === "dark";
   darkSwitch.checked = darkThemeSelected;
-  darkThemeSelected
-    ? document.body.setAttribute("data-theme", "dark")
-    : document.body.removeAttribute("data-theme");
+  resetTheme();
 }
 
 /**
@@ -44,12 +42,15 @@ function initTheme() {
  * @return {void}
  */
 function resetTheme() {
-  console.log("resetTheme");
   if (darkSwitch.checked) {
     document.body.setAttribute("data-theme", "dark");
     localStorage.setItem("darkSwitch", "dark");
+    $('#dark').show();
+    $('#light').hide();
   } else {
     document.body.removeAttribute("data-theme");
     localStorage.removeItem("darkSwitch");
+    $('#dark').hide();
+    $('#light').show();
   }
 }
